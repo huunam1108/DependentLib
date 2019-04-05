@@ -23,16 +23,15 @@ android {
     lintOptions {
         abortOnError false
     }
-    sourceSets {
-        main.java.srcDirs += 'src/main/java'
-        androidTest.java.srcDirs += 'src/androidTest/java'
-        androidTest.resources.srcDirs += 'src/androidTest/res'
-    }
+//    sourceSets {
+//        main.java.srcDirs += 'src/main/java'
+//        androidTest.java.srcDirs += 'src/androidTest/java'
+//        androidTest.resources.srcDirs += 'src/androidTest/res'
+//    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar, *.aar'])
-    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
     implementation 'androidx.core:core-ktx:1.1.0-alpha05'
@@ -41,38 +40,44 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
 }
 
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from android.sourceSets.main.java.sourceFiles
-}
+//task sourcesJar(type: Jar) {
+//    classifier = 'sources'
+//    from android.sourceSets.main.java.sourceFiles
+//}
+//
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.sourceFiles
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+//
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
+//
 
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.sourceFiles
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
 
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-task classesJar(type: Jar) {
-    baseName = project.name
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-}
+//task classesJar(type: Jar) {
+//    baseName = project.name
+//    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+//}
+//
+//task sourcesJar(type: Jar) {
+//    classifier = 'sources'
+//    from android.sourceSets.main.javaDirectories
+//}
 
 artifacts {
-    archives file: file('libs/mux-r2.8.0.aar'), name: 'mux-r2.8.0', type: 'aar'
-    archives classesJar
-    archives javadocJar
-    archives sourcesJar
+    archives file: file('libs/mux-r2.8.0.aar'), name: 'external-lib', type: 'aar'
+//    archives sourcesJar
+//    archives classesJar
 }
 
 install {
     repositories {
         mavenInstaller {
             addFilter('mux-r2.8.0') { artifact, file ->
-                artifact.name == 'mux-r2.8.0'
+                artifact.name == 'external-lib'
             }
             addFilter('dependentlib') { artifact, file ->
                 artifact.name == 'dependentlib'
