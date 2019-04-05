@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DependentLib.iml" filepath="$PROJECT_DIR$/DependentLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/dependentlib/dependentlib.iml" filepath="$PROJECT_DIR$/dependentlib/dependentlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mux-r2.8.0/mux-r2.8.0.iml" filepath="$PROJECT_DIR$/mux-r2.8.0/mux-r2.8.0.iml" />
     </modules>
   </component>
 </project>

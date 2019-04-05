@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:/home/nguyen.huu.nam/Desktop/CompanyProjects/DependentLib/dependentlib/libs/mux-r2.8.0.aar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-mux-r2.8.0.aar/f8c3889a294c91a2038dd2d9001a9286/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-mux-r2.8.0.aar/f8c3889a294c91a2038dd2d9001a9286/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

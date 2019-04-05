@@ -23,8 +23,34 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" useProjectSettings="false">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
         <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-mux-r2.8.0.aar/f8c3889a294c91a2038dd2d9001a9286/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.21/d207ce2c9bcf17dc8e51bab4dbfdac4d013e7138/kotlin-stdlib-jdk7-1.3.21.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha04.aar/0f4315896fa0fed4fbe3317e89cd0dcd/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/core-ktx-1.1.0-alpha05.aar/efd819da39240a1a3af001bcea12da59/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha06.aar/6fa491eedd374673a06593e1577669d7/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0-alpha04.aar/0329481c66a59e1091a52a2820f3621d/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/0f532017b728befd954fe93d23860fbe/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/376519c18d3f979671d78ec5ad8ccd3d/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/85472f9824c658f2dd8721c118d04ecb/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/activity-1.0.0-alpha06.aar/8a6a302ab7ad52aad583128cfbeeac14/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0-alpha01.aar/a99af3d511bf5ebdf179c07963ff84d8/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0-alpha01.aar/8b0a6a920811ba4f33347f1d96015e8a/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/44c6174b29df4c5cf4689f1d1e864702/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha05.aar/a13fb6de9e261d7bad666901296e679e/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/b59548140adb84c6d1986121018f0e44/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0-alpha02.aar/dd0160dd888e93e11ae3993ab485a499/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0-beta01/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0-beta01.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/androidx.concurrent/concurrent-futures/1.0.0-alpha02/b4a4a1ada5a1ba3f8df9f9e6384a0a404ccc48cb/concurrent-futures-1.0.0-alpha02.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0-alpha04.aar/af0b2088e1dfc28c98f9ac88ecc329de/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0-alpha04.aar/45bf84775ffdb02a4fc815f5a9b5f2fa/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/39b87144aee9886774e5d590849225b5/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0-alpha02.aar/26d6dcf7cebedbdb49408b6eb5597882/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/c4034cfcb2f583f62075345ece0ece31/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/3c29b76c036c51cbad7c55c71bdea2e2/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0-alpha01/52a1b1ca4523c8544b052af470485100183a4303/core-common-2.1.0-alpha01.jar:/home/nguyen.huu.nam/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/e158bec0f6de610d08371c6be4e90c5f/jars/classes.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.1.0-alpha04/c67e7807d9cd6c329b9d0218b2ec4e505dd340b7/lifecycle-common-2.1.0-alpha04.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0-beta01/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0-beta01.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/nguyen.huu.nam/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar:/home/nguyen.huu.nam/Desktop/CompanyProjects/DependentLib/dependentlib/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar:/home/nguyen.huu.nam/Android/Sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="dependentlib_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.21/311c0d1cbb0a194e8712edaef7b92a8f0919ca26/kotlin-android-extensions-1.3.21.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
       </configuration>
     </facet>
   </component>
@@ -91,34 +117,22 @@
       <excludeFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources" />
       <excludeFolder url="file://$MODULE_DIR$/build/generated/source/r" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/aapt_friendly_merged_manifests" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotation_processor_list" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotations_typedef_file" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotations_zip" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check_manifest_result" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/compile_only_not_namespaced_r_class_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/library_and_local_jars_jni" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/library_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/library_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/packaged-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/packaged_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/public_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shader_assets" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: artifacts:mux-r2.8.0:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21@jar" level="project" />
@@ -146,6 +160,7 @@
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0-beta01@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.core:core:1.1.0-alpha05@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/home/nguyen.huu.nam/Desktop/CompanyProjects/DependentLib/dependentlib/libs/mux-r2.8.0.aar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.1.0-alpha06@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0-alpha01@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
