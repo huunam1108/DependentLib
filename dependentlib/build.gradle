@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.mobbeel.plugin'
 
 group='com.github.huunam1108'
 
@@ -40,6 +41,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
 }
 
+aarPlugin {
+    includeAllInnerDependencies false
+}
+
 //task sourcesJar(type: Jar) {
 //    classifier = 'sources'
 //    from android.sourceSets.main.java.sourceFiles
@@ -67,21 +72,21 @@ dependencies {
 //    from android.sourceSets.main.javaDirectories
 //}
 
-artifacts {
-    archives file: file('libs/mux-r2.8.0.aar'), name: 'external-lib', type: 'aar'
-//    archives sourcesJar
-//    archives classesJar
-}
-
-install {
-    repositories {
-        mavenInstaller {
-            addFilter('mux-r2.8.0') { artifact, file ->
-                artifact.name == 'external-lib'
-            }
-            addFilter('dependentlib') { artifact, file ->
-                artifact.name == 'dependentlib'
-            }
-        }
-    }
-}
+//artifacts {
+//    archives file: file('libs/mux-r2.8.0.aar'), name: 'external-lib', type: 'aar'
+////    archives sourcesJar
+////    archives classesJar
+//}
+//
+//install {
+//    repositories {
+//        mavenInstaller {
+//            addFilter('mux-r2.8.0') { artifact, file ->
+//                artifact.name == 'external-lib'
+//            }
+//            addFilter('dependentlib') { artifact, file ->
+//                artifact.name == 'dependentlib'
+//            }
+//        }
+//    }
+//}
