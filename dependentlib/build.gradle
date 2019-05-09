@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
 //apply plugin: 'com.mobbeel.plugin'
 
-apply from: '../fat-aar.gradle'
+//apply from: '../fat-aar.gradle'
 
 group = 'com.github.huunam1108'
 
@@ -36,14 +36,17 @@ android {
 dependencies {
 //    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.google.android.material:material:1.0.0-beta01'
-    embedded deps.mux
+    implementation 'com.google.android.material:material:1.1.0-alpha06'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
     implementation 'androidx.core:core-ktx:1.1.0-alpha05'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
+    androidTestImplementation 'androidx.test:runner:1.2.0-beta01'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-beta01'
+
+    // Sentry test
+    implementation 'io.sentry:sentry-android:1.7.16'
+    implementation 'org.slf4j:slf4j-nop:1.7.25'
 }
 
 //aarPlugin {

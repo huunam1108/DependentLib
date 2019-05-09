@@ -1,9 +1,10 @@
 package com.namnh.dependentlib
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import io.sentry.Sentry
+import io.sentry.android.AndroidSentryClientFactory
 import kotlinx.android.synthetic.main.activity_main.*
 
 open class MainActivity : AppCompatActivity() {
@@ -18,14 +19,6 @@ open class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
 
-        testAar()
+        Sentry.init("https://48f11c14a0c54806ad34d26a926f0345@sentry.io/1455682", AndroidSentryClientFactory(this))
     }
-
-    private fun testAar() {
-        val test = TestImportAAR()
-        test.main()
-        Toast.makeText(this, "${test.playerData} is not null", Toast.LENGTH_LONG).show()
-        Toast.makeText(this, "${test.videoData} is not null", Toast.LENGTH_LONG).show()
-    }
-
 }
